@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Do Eye Floaters Move When You Try to Look at Them?</title>
+  <meta name="description" content="Ever wonder why eye floaters move when you try to look at them? Learn the science, psychology, and how to stop fueling the obsession.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://forgetfloaters.com/articles/why-eye-floaters-move">
+  <meta property="og:title" content="Why Do Eye Floaters Move When You Try to Look at Them?">
+  <meta property="og:description" content="Ever wonder why eye floaters move when you try to look at them? Learn the science, psychology, and how to stop fueling the obsession.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-bg: #FAF8F5;
+      --color-bg-warm: #F5F0E8;
+      --color-text: #2C2C2C;
+      --color-text-soft: #5C5C5C;
+      --color-accent: #3D5A4C;
+      --color-accent-hover: #2D4A3C;
+      --color-highlight: #E8E0D4;
+      --color-paper: #FFFEFA;
+      --font-handwritten: 'Caveat', cursive;
+      --font-body: 'Source Serif 4', Georgia, serif;
+      --max-width: 680px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 19px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle paper texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header */
+    .site-header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--color-highlight);
+    }
+
+    .site-header a {
+      font-family: var(--font-handwritten);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    .site-header a:hover {
+      color: var(--color-accent);
+    }
+
+    /* Article Header */
+    .article-header {
+      padding: 3rem 0 2rem;
+    }
+
+    .article-meta {
+      font-size: 0.875rem;
+      color: var(--color-text-soft);
+      margin-bottom: 1rem;
+    }
+
+    .article-title {
+      font-family: var(--font-handwritten);
+      font-size: 2.75rem;
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+    }
+
+    .article-description {
+      font-size: 1.15rem;
+      color: var(--color-text-soft);
+      font-style: italic;
+    }
+
+    /* Article Content */
+    .article-content {
+      padding-bottom: 3rem;
+    }
+
+    .article-content p {
+      margin-bottom: 1.5rem;
+    }
+
+    .article-content h2 {
+      font-family: var(--font-handwritten);
+      font-size: 1.85rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .article-content h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-content ul,
+    .article-content ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.25rem;
+    }
+
+    .article-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    .article-content strong {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .article-content em {
+      font-style: italic;
+    }
+
+    /* Highlighted text */
+    .emphasis {
+      background: linear-gradient(180deg, transparent 60%, var(--color-highlight) 60%);
+      padding: 0 2px;
+    }
+
+    /* Science box */
+    .science-box {
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-highlight);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .science-box h3 {
+      margin-top: 0;
+      color: var(--color-accent);
+    }
+
+    .science-box h3:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    /* Tip box */
+    .tip-box {
+      background-color: var(--color-bg-warm);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .tip-box h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .tip-box p {
+      margin-bottom: 0.75rem;
+    }
+
+    .tip-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Callout / blockquote */
+    .callout {
+      background-color: var(--color-paper);
+      border-left: 3px solid var(--color-accent);
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .callout p {
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      font-family: var(--font-handwritten);
+      font-size: 1.75rem;
+      line-height: 1.3;
+      color: var(--color-accent);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin: 2rem 0;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-highlight);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-family: var(--font-handwritten);
+      font-size: 1.85rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+
+    .cta-section p {
+      color: var(--color-text-soft);
+      margin-bottom: 1.25rem;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-section p:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-link {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border: 2px solid var(--color-accent);
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .cta-link:hover {
+      background-color: var(--color-accent);
+      color: #fff;
+    }
+
+    .cta-footer {
+      font-size: 0.9rem;
+      color: var(--color-text-soft);
+      font-style: italic;
+      margin-top: 1.25rem;
+      margin-bottom: 0 !important;
+    }
+
+    /* Footer */
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--color-text-soft);
+      border-top: 1px solid var(--color-highlight);
+    }
+
+    footer a {
+      color: var(--color-text-soft);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--color-text);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      html {
+        font-size: 17px;
+      }
+
+      .article-header {
+        padding: 2rem 0 1.5rem;
+      }
+
+      .article-title {
+        font-size: 2rem;
+      }
+
+      .pull-quote {
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+      }
+
+      .cta-section {
+        padding: 1.5rem;
+        margin: 2rem -0.5rem;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/">Forget Floaters</a>
+    </div>
+  </header>
+
+  <!-- Article Header -->
+  <article>
+    <header class="article-header">
+      <div class="container">
+        <p class="article-meta">June 13, 2025</p>
+        <h1 class="article-title">Why Do Eye Floaters Move When You Try to Look at Them?</h1>
+        <p class="article-description">Ever wonder why eye floaters move when you try to look at them? Learn the science, psychology, and how to stop fueling the obsession.</p>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <div class="article-content">
+      <div class="container">
+
+        <p>If you've ever tried to stare directly at an eye floater, you've probably noticed something strange — it moves. It zips away, dodges your gaze, and seems almost <em>aware</em> that you're trying to catch it.</p>
+
+        <p>This odd little experience is so common that it sparks one of the most frequent search questions online: <strong>Why do eye floaters move when you try to look at them?</strong></p>
+
+        <p>In this article, we'll dive into the visual science behind that phenomenon, why it reinforces your mental focus on floaters, and how understanding it can actually help you stop obsessing over them.</p>
+
+        <h2>First, What Are Eye Floaters?</h2>
+
+        <p>Eye floaters are small clumps of collagen or cellular debris that float inside the <strong>vitreous humor</strong> — the gel-like substance that fills your eyeball.</p>
+
+        <p>As light enters your eye, these clumps cast shadows on the retina at the back of your eye. That's why you see those faint dots, specks, threads, or cobweb-like shapes drifting through your vision.</p>
+
+        <p>They're most visible:</p>
+
+        <ul>
+          <li>When looking at bright skies or white walls</li>
+          <li>While reading on digital screens</li>
+          <li>During high visual contrast situations (e.g. bright screen in a dark room)</li>
+        </ul>
+
+        <p>Most eye floaters are harmless and age-related, though sudden increases or flashes of light <em>can</em> be signs of a retinal tear or detachment. (Always get checked if you experience sudden changes.)</p>
+
+        <h2>So… Why Do They Move When You Look at Them?</h2>
+
+        <p>The simple answer: <strong>Because they're physically inside your eye.</strong></p>
+
+        <p>Your floaters drift in the vitreous, and they move in response to the movement of your eyes. So when you try to shift your gaze toward them, your eye muscles move — which in turn causes the vitreous to shift. The floater moves too, often just ahead of where you were trying to focus.</p>
+
+        <p>It's not magic. It's physics.</p>
+
+        <p>Here's a breakdown of what's happening:</p>
+
+        <div class="science-box">
+          <h3>1. Vitreous Lag</h3>
+          <p>The vitreous is a thick gel. When your eye moves, the vitreous doesn't move in perfect sync — it <em>lags slightly behind</em>. That lag causes floaters suspended in the gel to drift in the direction of your last eye movement.</p>
+          <p>So when you try to focus on a floater, you move your eyes toward it — and the floater drifts just ahead of your new line of sight.</p>
+
+          <h3>2. You Can't Directly Focus on Floaters</h3>
+          <p>Your eye's lens focuses light on your retina — but since floaters are <em>inside</em> the eye (between the lens and retina), they're technically out of the focal plane.</p>
+          <p>You can't "focus" on them like you would on a distant object. They're shadows, not solid forms. That makes them slippery — always just out of reach.</p>
+
+          <h3>3. Your Brain Is Wired to Chase Movement</h3>
+          <p>This is where psychology kicks in. Your visual cortex is constantly scanning for movement — it's part of your survival wiring. Movement in your field of vision = possible threat.</p>
+          <p>That's why even when floaters are benign, your brain may tag them as important, leading to compulsive <em>gaze-chasing</em>. The more you try to look at them, the more they move — which keeps your attention locked in.</p>
+        </div>
+
+        <h2>How This Mechanism Feeds the Obsession</h2>
+
+        <p>Here's the deeper problem: Trying to look directly at floaters doesn't just fail — it <span class="emphasis">trains your brain to pay more attention to them</span>.</p>
+
+        <p>Every time you chase a floater:</p>
+
+        <ul>
+          <li>Your brain flags it as important</li>
+          <li>You reinforce the anxiety loop</li>
+          <li>You increase your visual sensitivity</li>
+        </ul>
+
+        <p>It becomes a self-reinforcing cycle.</p>
+
+        <h2>Breaking the Chase-React Loop</h2>
+
+        <p>If you want to reduce how often you notice floaters — or how much they bother you — one of the first steps is learning to <strong>let go of the chase</strong>.</p>
+
+        <p>Here are a few tips that helped me:</p>
+
+        <div class="tip-box">
+          <h3>1. Sit Still and Watch Without Reacting</h3>
+          <p>Instead of chasing the floater with your eyes, allow it to drift. Don't track it. Don't try to focus on it. Just <em>watch it pass</em> — like a bird gliding across the sky.</p>
+          <p>This builds tolerance and reduces your reactivity.</p>
+        </div>
+
+        <div class="tip-box">
+          <h3>2. Practice Still Gaze Drills</h3>
+          <p>Pick a central point on a bright but comfortable surface (like a cloud or wall). Keep your eyes still. If a floater enters your field of view, resist the urge to chase it. Let it drift through your periphery.</p>
+          <p>Your brain will gradually stop flagging it as important.</p>
+        </div>
+
+        <div class="tip-box">
+          <h3>3. Stop Checking If They're "Still There"</h3>
+          <p>This habit — checking and scanning — is incredibly common among floater sufferers. But each "check" re-engages the mental loop.</p>
+          <p>Treat checking as a compulsion, not a curiosity. Gently interrupt it when it arises.</p>
+        </div>
+
+        <h2>Rewiring Your Vision Experience</h2>
+
+        <p>You can't always remove floaters from your visual field — but you <em>can</em> reduce how much attention your brain gives them.</p>
+
+        <p>That's the core idea behind <strong>neuroplasticity</strong>:</p>
+
+        <div class="callout">
+          <p>What you repeatedly focus on, you reinforce. What you allow to fade, your brain starts to filter out.</p>
+        </div>
+
+        <p>This is how people — myself included — go from feeling tormented by floaters to barely noticing them at all.</p>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+          <h2>Want to go deeper?</h2>
+          <p>If this article resonates with you, I wrote an entire guide that walks through exactly how to stop obsessing over floaters, break the chase-response cycle, and retrain your brain to let them fade.</p>
+          <p>It's called <em>Forget Floaters</em>, and it's the method I used to go from constant awareness to barely noticing them at all.</p>
+          <a href="/" class="cta-link">Learn more about it here →</a>
+          <p class="cta-footer">The more you chase a floater, the more it runs. The more you let it drift... the more it disappears.</p>
+        </div>
+
+        <h2>Final Thoughts</h2>
+
+        <p>If you're wondering <em>why eye floaters move when you try to look at them</em>, the answer is part physics, part psychology — and part invitation.</p>
+
+        <p>An invitation to stop chasing. To stop checking. To let them pass through your awareness without gripping your attention.</p>
+
+        <p class="pull-quote">Because the more you try to catch a floater, the more it runs. And the more you let it drift... the more it disappears.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Questions? <a href="mailto:forgetfloaters@fastmail.com">forgetfloaters@fastmail.com</a></p>
+      <p style="margin-top: 0.5rem;">© 2025 Matt Livingston</p>
+    </div>
+  </footer>
+
+</body>
+</html>

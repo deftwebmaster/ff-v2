@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles About Eye Floaters | Forget Floaters</title>
+  <meta name="description" content="Practical articles about living with eye floaters. Learn about treatments, coping strategies, and how to retrain your brain to stop obsessing over floaters.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://forgetfloaters.com/blog/">
+  <meta property="og:title" content="Articles About Eye Floaters | Forget Floaters">
+  <meta property="og:description" content="Practical articles about living with eye floaters. Learn about treatments, coping strategies, and how to retrain your brain to stop obsessing over floaters.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-bg: #FAF8F5;
+      --color-bg-warm: #F5F0E8;
+      --color-text: #2C2C2C;
+      --color-text-soft: #5C5C5C;
+      --color-accent: #3D5A4C;
+      --color-accent-hover: #2D4A3C;
+      --color-highlight: #E8E0D4;
+      --color-paper: #FFFEFA;
+      --font-handwritten: 'Caveat', cursive;
+      --font-body: 'Source Serif 4', Georgia, serif;
+      --max-width: 800px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 18px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle paper texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header */
+    .site-header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--color-highlight);
+    }
+
+    .site-header a {
+      font-family: var(--font-handwritten);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    .site-header a:hover {
+      color: var(--color-accent);
+    }
+
+    /* Page Header */
+    .page-header {
+      padding: 3rem 0 2rem;
+      text-align: center;
+    }
+
+    .page-title {
+      font-family: var(--font-handwritten);
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--color-text);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-description {
+      font-size: 1.1rem;
+      color: var(--color-text-soft);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Article Grid */
+    .article-grid {
+      display: grid;
+      gap: 1.5rem;
+      padding-bottom: 3rem;
+    }
+
+    /* Article Card */
+    .article-card {
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-highlight);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: block;
+    }
+
+    .article-card:hover {
+      border-color: var(--color-accent);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+
+    .article-card-meta {
+      font-size: 0.8rem;
+      color: var(--color-text-soft);
+      margin-bottom: 0.5rem;
+    }
+
+    .article-card-title {
+      font-family: var(--font-handwritten);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+
+    .article-card:hover .article-card-title {
+      color: var(--color-accent-hover);
+    }
+
+    .article-card-description {
+      font-size: 0.95rem;
+      color: var(--color-text-soft);
+      line-height: 1.6;
+    }
+
+    /* Category Labels */
+    .category-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+
+    .category-understanding {
+      background-color: #E8F0ED;
+      color: var(--color-accent);
+    }
+
+    .category-treatment {
+      background-color: #FDF6F0;
+      color: #8B6914;
+    }
+
+    .category-coping {
+      background-color: #F0E8F5;
+      color: #6B4C8C;
+    }
+
+    .category-medical {
+      background-color: #FDF0F0;
+      color: #8B4C4C;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background-color: var(--color-bg-warm);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0 3rem;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-family: var(--font-handwritten);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .cta-section p {
+      color: var(--color-text-soft);
+      margin-bottom: 1.25rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-link {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background-color: var(--color-accent);
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .cta-link:hover {
+      background-color: var(--color-accent-hover);
+    }
+
+    /* Footer */
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--color-text-soft);
+      border-top: 1px solid var(--color-highlight);
+    }
+
+    footer a {
+      color: var(--color-text-soft);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--color-text);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      html {
+        font-size: 16px;
+      }
+
+      .page-header {
+        padding: 2rem 0 1.5rem;
+      }
+
+      .page-title {
+        font-size: 2.25rem;
+      }
+
+      .article-card {
+        padding: 1.25rem;
+      }
+
+      .article-card-title {
+        font-size: 1.4rem;
+      }
+
+      .cta-section {
+        padding: 1.5rem;
+        margin: 1.5rem -0.5rem 2rem;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="/">Forget Floaters</a>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title">Articles</h1>
+      <p class="page-description">Everything you need to know about eye floaters — from understanding what they are to learning how to stop obsessing over them.</p>
+    </div>
+  </section>
+
+  <!-- Article Grid -->
+  <main class="container">
+    <div class="article-grid">
+
+      <!-- When to Worry -->
+      <a href="/blog/worry-eye-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-medical">Medical</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">When to Worry About Eye Floaters: Signs You Shouldn't Ignore</h2>
+        <p class="article-card-description">Not all eye floaters are harmless. Learn when to worry, which symptoms may signal a serious issue, and when to see an eye doctor.</p>
+      </a>
+
+      <!-- Why Floaters Move -->
+      <a href="/blog/why-eye-floaters-move/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-understanding">Understanding</span>
+          June 13, 2025
+        </div>
+        <h2 class="article-card-title">Why Do Eye Floaters Move When You Try to Look at Them?</h2>
+        <p class="article-card-description">Ever wonder why eye floaters move when you try to look at them? Learn the science, psychology, and how to stop fueling the obsession.</p>
+      </a>
+
+      <!-- Eye Floaters Treatment -->
+      <a href="/blog/eye-floaters-treatment/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-treatment">Treatment</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">Eye Floaters Treatment: What Really Works and What's Just Hype</h2>
+        <p class="article-card-description">Explore real eye floater treatments that work — and which ones are just hype. Discover science-backed options, natural remedies, and why your brain may hold the key to relief.</p>
+      </a>
+
+      <!-- Get Rid of Floaters -->
+      <a href="/blog/get-rid-eye-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-treatment">Treatment</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">How to Get Rid of Eye Floaters: What You Need to Know</h2>
+        <p class="article-card-description">Wondering how to get rid of eye floaters? Learn what works, what doesn't, and how to retrain your brain to stop obsessing over them.</p>
+      </a>
+
+      <!-- Treat Without Surgery -->
+      <a href="/blog/treat-floaters-without-surgery/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-treatment">Treatment</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">The Best Way to Treat Eye Floaters Without Surgery: What Actually Works</h2>
+        <p class="article-card-description">Discover the best non-surgical treatments for eye floaters. Learn what actually works, what to avoid, and how to retrain your focus naturally.</p>
+      </a>
+
+      <!-- Anxiety & Floaters -->
+      <a href="/blog/anxiety-eye-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-coping">Coping</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">Anxiety and Eye Floaters: Breaking the Cycle</h2>
+        <p class="article-card-description">Learn why floaters trigger anxiety, how the anxiety-floater feedback loop works, and practical strategies to break the cycle.</p>
+      </a>
+
+      <!-- Stress & Floaters -->
+      <a href="/blog/eye-floaters-stress/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-understanding">Understanding</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">Can Stress Make Eye Floaters Worse?</h2>
+        <p class="article-card-description">Explore the connection between stress and eye floaters. Learn how stress affects your perception of floaters and what you can do about it.</p>
+      </a>
+
+      <!-- Meditation Techniques -->
+      <a href="/blog/meditation-techniques-eye-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-coping">Coping</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">Meditation Techniques for Eye Floaters: Calm the Mind, Quiet the Specks</h2>
+        <p class="article-card-description">Explore meditation techniques designed to help reduce eye floater anxiety. Learn how to calm your mind and shift your focus away from the specks.</p>
+      </a>
+
+      <!-- Computer Use -->
+      <a href="/blog/computer-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-coping">Coping</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">How to Use a Computer with Eye Floaters: Screen Settings and Strategies That Actually Work</h2>
+        <p class="article-card-description">Practical tips for working on screens when floaters are bothering you. Screen settings, workspace adjustments, and mental strategies.</p>
+      </a>
+
+      <!-- Natural Remedies -->
+      <a href="/blog/natural-remedies-reduce-eye-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-treatment">Treatment</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">Natural Remedies to Reduce Eye Floaters: What Works and What's Just Hype</h2>
+        <p class="article-card-description">Discover natural remedies for reducing eye floaters. Learn what may actually help, what's just hype, and how to support your vision naturally.</p>
+      </a>
+
+      <!-- Laser Vitreolysis -->
+      <a href="/blog/laser-vitreolysis-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-medical">Medical</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">What Is Laser Vitreolysis for Floaters? A Clear Look at This Eye Procedure</h2>
+        <p class="article-card-description">Learn what laser vitreolysis is, how it targets eye floaters, who it's for, and what to expect during this non-invasive vision procedure.</p>
+      </a>
+
+      <!-- Vitrectomy -->
+      <a href="/blog/vitrectomy-floaters/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-medical">Medical</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">Pros and Cons of Vitrectomy for Floaters: Is It Worth the Risk?</h2>
+        <p class="article-card-description">Considering vitrectomy for floaters? Learn the real pros and cons of this invasive procedure, and whether the potential benefits outweigh the risks.</p>
+      </a>
+
+      <!-- During Surgery -->
+      <a href="/blog/during-eye-floaters-surgery/" class="article-card">
+        <div class="article-card-meta">
+          <span class="category-label category-medical">Medical</span>
+          June 12, 2025
+        </div>
+        <h2 class="article-card-title">What Happens During Eye Floaters Surgery?</h2>
+        <p class="article-card-description">A step-by-step look at what happens during vitrectomy surgery for eye floaters, including preparation, the procedure itself, and recovery expectations.</p>
+      </a>
+
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+      <h2>Want the complete method?</h2>
+      <p>These articles cover the basics. The book goes deeper — with the full system I used to stop caring about my floaters.</p>
+      <a href="/" class="cta-link">Learn about Forget Floaters →</a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Questions? <a href="mailto:forgetfloaters@fastmail.com">forgetfloaters@fastmail.com</a></p>
+      <p style="margin-top: 0.5rem;">© 2025 Matt Livingston</p>
+    </div>
+  </footer>
+
+</body>
+</html>

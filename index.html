@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forget Floaters — Train Your Brain to Stop Noticing</title>
+  <meta name="description" content="I haven't thought about my eye floaters in weeks. It took me years to figure out how. It'll take you a lot less.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://forgetfloaters.com/">
+  <meta property="og:title" content="Forget Floaters — Train Your Brain to Stop Noticing">
+  <meta property="og:description" content="I haven't thought about my eye floaters in weeks. It took me years to figure out how. It'll take you a lot less.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --color-bg: #FAF8F5;
+      --color-bg-warm: #F5F0E8;
+      --color-text: #2C2C2C;
+      --color-text-soft: #5C5C5C;
+      --color-accent: #3D5A4C;
+      --color-accent-hover: #2D4A3C;
+      --color-highlight: #E8E0D4;
+      --color-paper: #FFFEFA;
+      --font-handwritten: 'Caveat', cursive;
+      --font-body: 'Source Serif 4', Georgia, serif;
+      --max-width: 680px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 19px;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Subtle paper texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+
+    .hero-cover {
+      margin-bottom: 2rem;
+    }
+
+    .hero-cover img {
+      width: 220px;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .hero-headline {
+      font-family: var(--font-handwritten);
+      font-size: 3rem;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+      color: var(--color-text);
+    }
+
+    .hero-subhead {
+      font-size: 1.15rem;
+      color: var(--color-text-soft);
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.875rem 2rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: var(--color-accent);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(61, 90, 76, 0.3);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--color-text);
+      border: 2px solid var(--color-highlight);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--color-text);
+    }
+
+    /* Content sections */
+    section {
+      padding: 3rem 0;
+    }
+
+    .prose {
+      position: relative;
+    }
+
+    .prose p {
+      margin-bottom: 1.5rem;
+    }
+
+    .prose p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Section headers - handwritten style */
+    .section-label {
+      font-family: var(--font-handwritten);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Emphasized text */
+    .emphasis {
+      background: linear-gradient(180deg, transparent 60%, var(--color-highlight) 60%);
+      padding: 0 2px;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      font-family: var(--font-handwritten);
+      font-size: 2rem;
+      line-height: 1.3;
+      color: var(--color-accent);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin: 2rem 0;
+    }
+
+    /* Story section with subtle background */
+    .story-section {
+      background-color: var(--color-paper);
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      margin: 2rem 0;
+      border: 1px solid var(--color-highlight);
+    }
+
+    /* What's inside list */
+    .whats-inside {
+      margin: 1.5rem 0;
+    }
+
+    .whats-inside-item {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--color-highlight);
+    }
+
+    .whats-inside-item:last-child {
+      border-bottom: none;
+    }
+
+    .whats-inside-title {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .whats-inside-desc {
+      color: var(--color-text-soft);
+      font-size: 0.95rem;
+      margin-top: 0.25rem;
+    }
+
+    /* Bonus grid */
+    .bonus-grid {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .bonus-item {
+      background-color: var(--color-paper);
+      border: 1px solid var(--color-highlight);
+      padding: 1.25rem;
+      border-radius: 6px;
+    }
+
+    .bonus-item-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .bonus-item-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-soft);
+    }
+
+    /* Who this is for */
+    .for-list {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .for-list li {
+      padding: 0.5rem 0;
+      padding-left: 1.75rem;
+      position: relative;
+    }
+
+    .for-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+    }
+
+    .for-list.not-for li::before {
+      content: "✕";
+      color: var(--color-text-soft);
+    }
+
+    /* Guarantee box */
+    .guarantee {
+      background-color: var(--color-bg-warm);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .guarantee-title {
+      font-family: var(--font-handwritten);
+      font-size: 1.75rem;
+      color: var(--color-accent);
+      margin-bottom: 1rem;
+    }
+
+    .guarantee p {
+      color: var(--color-text-soft);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      text-align: center;
+      padding: 4rem 0;
+      border-top: 1px solid var(--color-highlight);
+    }
+
+    .final-cta-headline {
+      font-family: var(--font-handwritten);
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .final-cta-body {
+      font-size: 1.1rem;
+      color: var(--color-text-soft);
+      margin-bottom: 2rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .microcopy {
+      font-size: 0.875rem;
+      color: var(--color-text-soft);
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--color-text-soft);
+      border-top: 1px solid var(--color-highlight);
+    }
+
+    footer a {
+      color: var(--color-text-soft);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--color-text);
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-cover,
+    .hero-headline,
+    .hero-subhead,
+    .hero-cta {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+
+    .hero-headline { animation-delay: 0.1s; }
+    .hero-subhead { animation-delay: 0.2s; }
+    .hero-cta { animation-delay: 0.3s; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      html {
+        font-size: 17px;
+      }
+
+      .hero {
+        padding: 3rem 0 2rem;
+      }
+
+      .hero-headline {
+        font-size: 2.25rem;
+      }
+
+      .hero-cover img {
+        width: 180px;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+      }
+
+      .story-section {
+        padding: 1.5rem 1.25rem;
+        margin: 1.5rem -0.5rem;
+        border-radius: 0;
+      }
+
+      .pull-quote {
+        font-size: 1.5rem;
+        padding: 1.5rem 0;
+      }
+
+      .final-cta-headline {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-cover">
+        <img src="/forget-floaters-cover.png" alt="Forget Floaters by Matt Livingston">
+      </div>
+      <h1 class="hero-headline">I haven't thought about my eye floaters in weeks.</h1>
+      <p class="hero-subhead">It took me years to figure out how. It'll take you a lot less.</p>
+      <div class="hero-cta">
+        <a href="/buy/" class="btn btn-primary">Get the Book — $12</a>
+        <a href="/sample.pdf" class="btn btn-secondary">Read a Free Chapter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opening Hook -->
+  <section>
+    <div class="container prose">
+      <p>You just noticed them, didn't you?</p>
+      <p>Maybe a few days ago. Maybe a few weeks. Maybe you're sitting in a bright room right now, watching a little string or dot drift across your vision, wondering why it won't go away.</p>
+      <p>You've probably already Googled it. You've read that they're "harmless." You've seen the forums. You've maybe even seen a doctor who told you there's nothing wrong — just some debris in your eye, totally normal, you'll get used to it.</p>
+      <p>But you haven't gotten used to it. And <span class="emphasis">"harmless" doesn't feel harmless</span> when it's the first thing you see every morning and the last thing you see every night.</p>
+      <p>I know. I've been exactly where you are.</p>
+    </div>
+  </section>
+
+  <!-- The Story -->
+  <section>
+    <div class="container">
+      <p class="section-label">My story</p>
+      <div class="story-section prose">
+        <p>I first noticed my floaters in high school.</p>
+        <p>At first, I thought something was wrong with my eyes. I blinked. I rubbed. I tilted my head. They didn't go away. They just... floated there. Drifting. Following my gaze like little shadows I couldn't escape.</p>
+        <p>I told myself it was nothing. But my brain didn't get the memo.</p>
+        <p>Within weeks, I was checking for them constantly. White walls. Blue skies. Bright screens. Every surface became a test. Every moment of stillness became an opportunity for my eyes to find them again.</p>
+        <p>And they always did.</p>
+        <p>I started avoiding things. I'd sit with my back to windows. I'd dim every screen. I'd wear sunglasses indoors and pretend I had a headache. I was seventeen years old, and I was arranging my entire life around specks in my vision that no one else could see.</p>
+        <p>The worst part wasn't the floaters. <span class="emphasis">It was the loneliness.</span></p>
+        <p>No one understood. My friends thought I was being dramatic. My parents thought I was anxious about something else. The eye doctor said my retinas were fine and sent me home. I felt like I was losing my mind — obsessing over something "harmless" that was ruining my life.</p>
+        <p>I spiraled. I Googled worst-case scenarios. I read horror stories on forums. I lay awake at night, staring at the ceiling, watching the little shapes drift in the dark, wondering if this was just my life now.</p>
+        <p>It went on like that for years.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull Quote -->
+  <div class="container">
+    <p class="pull-quote">"The floaters weren't the problem. My brain's response to them was."</p>
+  </div>
+
+  <!-- The Turn -->
+  <section>
+    <div class="container prose">
+      <p class="section-label">The turn</p>
+      <p>Then something changed.</p>
+      <p>I don't remember the exact moment. But somewhere along the way, I stopped fighting them — and started studying them. Not the floaters themselves, but my reaction to them. The loop I was caught in.</p>
+      <p>I started noticing patterns. The more I checked, the more I saw. The more anxious I felt, the sharper they appeared. The more I tried to control my environment, the more my environment controlled me.</p>
+      <p>I realized the floaters weren't the problem. My brain's response to them was.</p>
+      <p>So I started experimenting. I exposed myself to bright environments on purpose — not to "test" my floaters, but to sit with them without reacting. I practiced noticing them and doing nothing. No blinking. No scanning. No adjusting. Just... letting them be there.</p>
+      <p>The first few times were brutal. Every instinct told me to check, to fix, to do <em>something</em>. But I didn't. I just breathed. And waited.</p>
+      <p>And slowly, something shifted.</p>
+      <p>The panic faded. The urgency faded. The floaters were still there — but they stopped mattering. My brain, starved of the reaction it had been trained to expect, started filing them away as background noise.</p>
+      <p><span class="emphasis">It took me years to figure this out.</span> Years of trial and error, false starts, and lonely research.</p>
+      <p>But once I understood how the loop worked — and how to break it — I noticed real change within a week. Within a few more weeks, I had my first weekend where I didn't think about them at all.</p>
+      <p>Today, I go weeks without noticing them. Sometimes longer. When I do catch one drifting by, there's no spike. No dread. Just a passing thought: <em>oh, that's still there. Anyway.</em></p>
+    </div>
+  </section>
+
+  <!-- The Offer -->
+  <section>
+    <div class="container prose">
+      <p class="section-label">Why I wrote this</p>
+      <p>I wrote this book because I needed it to exist.</p>
+      <p>When I was seventeen, spiraling, Googling at 2am, I would have given anything for someone to tell me: <em>this gets better. Here's how.</em></p>
+      <p>No one did. So I figured it out myself. And now I'm handing you everything I learned.</p>
+      <p><strong>Forget Floaters</strong> is a short, honest, practical guide to retraining your brain to stop caring about eye floaters. Not a cure. Not a gimmick. Not a supplement or a surgery. Just the method that actually worked — explained clearly, so you can start using it today.</p>
+    </div>
+  </section>
+
+  <!-- What's Inside -->
+  <section>
+    <div class="container">
+      <p class="section-label">What's inside</p>
+      <div class="whats-inside">
+        <div class="whats-inside-item">
+          <div class="whats-inside-title">The science of why you're stuck</div>
+          <div class="whats-inside-desc">How your brain's pattern recognition and threat detection turned a harmless speck into an obsession</div>
+        </div>
+        <div class="whats-inside-item">
+          <div class="whats-inside-title">The attention retraining method</div>
+          <div class="whats-inside-desc">The exact techniques I used daily, and still use when I need them</div>
+        </div>
+        <div class="whats-inside-item">
+          <div class="whats-inside-title">The 4 stages of "forgetting"</div>
+          <div class="whats-inside-desc">What progress actually looks like (hint: it's not linear)</div>
+        </div>
+        <div class="whats-inside-item">
+          <div class="whats-inside-title">Environmental strategies</div>
+          <div class="whats-inside-desc">How to set up your screens, lighting, and spaces to stop feeding the loop</div>
+        </div>
+        <div class="whats-inside-item">
+          <div class="whats-inside-title">The emotional toolkit</div>
+          <div class="whats-inside-desc">Breaking the reassurance cycle, handling setbacks, and what to say to people who don't understand</div>
+        </div>
+        <div class="whats-inside-item">
+          <div class="whats-inside-title">A 7-day quick start plan</div>
+          <div class="whats-inside-desc">So you can begin practicing the day you finish reading</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bonuses -->
+  <section>
+    <div class="container">
+      <p class="section-label">Also included</p>
+      <p>Five tools I built for myself during the process:</p>
+      <div class="bonus-grid">
+        <div class="bonus-item">
+          <div class="bonus-item-title">7-Day Mental Reset Plan</div>
+          <div class="bonus-item-desc">The expanded daily practice guide</div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-item-title">Daily Tracker</div>
+          <div class="bonus-item-desc">A simple sheet to track progress without obsessing</div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-item-title">Emergency Calm Protocol</div>
+          <div class="bonus-item-desc">A printable 60-second reset for panic moments</div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-item-title">Brain Loop Infographic</div>
+          <div class="bonus-item-desc">How attention retraining works, one visual</div>
+        </div>
+        <div class="bonus-item">
+          <div class="bonus-item-title">The Floater FAQ Nobody Gave You</div>
+          <div class="bonus-item-desc">Straight answers to "Am I going blind?" and "Why can't I stop seeing them?"</div>
+        </div>
+      </div>
+      <p style="color: var(--color-text-soft); font-size: 0.95rem;">No upsells. No email sequence. Download everything and start.</p>
+    </div>
+  </section>
+
+  <!-- Who This Is For -->
+  <section>
+    <div class="container">
+      <p class="section-label">Is this for you?</p>
+      <p><strong>This book is for you if:</strong></p>
+      <ul class="for-list">
+        <li>You recently noticed floaters and can't stop thinking about them</li>
+        <li>You've been told "just ignore it" but have no idea how</li>
+        <li>You're tired of feeling dismissed by doctors and misunderstood by everyone else</li>
+        <li>You're ready to stop Googling and start doing something that works</li>
+      </ul>
+      <p style="margin-top: 2rem;"><strong>This book is not for you if:</strong></p>
+      <ul class="for-list not-for">
+        <li>You're looking for a medical cure (this isn't one)</li>
+        <li>You haven't seen a doctor yet (rule out the serious stuff first)</li>
+        <li>You want a magic fix with no effort (this takes practice)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section>
+    <div class="container">
+      <div class="guarantee">
+        <p class="guarantee-title">No risk</p>
+        <p>If this doesn't help, email me. I'll refund you. No forms, no questions, no weird conversation. I wrote this because it worked for me and I wanted it to exist for other people. If it doesn't work for you, I'd rather you have your $12 back.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 class="final-cta-headline">You don't have to live like this.</h2>
+      <p class="final-cta-body">The floaters might stay. But the suffering doesn't have to. I spent years figuring this out so you don't have to. One short book. A few days of practice. And the start of something that took me far too long to find: peace.</p>
+      <a href="/buy/" class="btn btn-primary">Get the Book — $12</a>
+      <p class="microcopy">PDF download. Instant access. Start reading in 2 minutes.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Questions? <a href="mailto:forgetfloaters@fastmail.com">forgetfloaters@fastmail.com</a></p>
+      <p style="margin-top: 0.5rem;">© 2025 Matt Livingston</p>
+    </div>
+  </footer>
+
+</body>
+</html>
